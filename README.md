@@ -2,9 +2,9 @@ The ng2-interactive-child-parent project demonstrates us utility of communicatio
 
 DEMO:
 
-git clone https://github.com/anouar99pac/am-ngxModal.git
+git clone https://github.com/anouar99pac/ng2-interactive-child-parent.git
 
-cd am-ngxModal
+cd ng2-interactive-child-parent
 
 yarn install
 
