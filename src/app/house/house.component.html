@@ -1,0 +1,10 @@
+<div>
+    <fieldset class="container">
+        <legend>House Parent</legend>
+
+        <app-kitchen [kitchenSurface]="kitchenSurface"></app-kitchen>
+
+        <app-living-room (reporting)="onSubscribe($event)"></app-living-room>
+
+    </fieldset>
+</div>
