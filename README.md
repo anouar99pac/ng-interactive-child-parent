@@ -1,3 +1,17 @@
+The ng2-interactive-child-parent project demonstrates us utility of communication and share Data beetween child component and parent component of Angular 4.
+
+DEMO:
+
+git clone https://github.com/anouar99pac/am-ngxModal.git
+
+cd am-ngxModal
+
+yarn install
+
+yarn start
+
+This project was built using Angular CLI version 1.1.0.
+
 # InteractiveChildParent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
