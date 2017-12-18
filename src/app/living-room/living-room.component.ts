@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { SURFACE_TYPE } from './../shared/room';
 
 @Component({
   selector: 'app-living-room',
@@ -7,11 +8,11 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class LivingRoomComponent{
 
-  @Output()
-  reporting = new EventEmitter();
+  @Output() reporting : EventEmitter<SURFACE_TYPE> = new EventEmitter<SURFACE_TYPE>();
 
   countToEvent(surfaceField) {
-      this.reporting.emit(surfaceField.value);
+      let surface = surfaceField.value;
+      this.reporting.emit(surface);
       surfaceField.value = '';
   }
 }
