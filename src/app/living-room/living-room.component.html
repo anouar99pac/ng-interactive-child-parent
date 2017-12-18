@@ -4,7 +4,7 @@
     <h5>Hello, enter your living room surface :</h5>
 
     <form>
-        <input #surface type="number" step="0.01" min="0" name="email" placeholder="Surface (m2)">
+        <input #surface type="number" step="0.01" min="0" name="email" placeholder="Surface (m2)" (keydown.enter)="countToEvent(surface)">
         <input type="button" class="button button-primary" value="Count" (click)="countToEvent(surface)">
     </form>
 </fieldset>

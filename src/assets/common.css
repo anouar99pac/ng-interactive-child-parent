@@ -49,3 +49,22 @@ h2 {
     max-width: 300px;
     margin: 0 auto;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2% 5%;
+    background: #323232;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 0 0 10px;
+    color: #f0f0f0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn {
+    margin-left: 4px;
+}
