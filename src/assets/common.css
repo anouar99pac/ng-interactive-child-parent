@@ -68,3 +68,7 @@ h2 {
 .btn {
     margin-left: 4px;
 }
+
+.ob-message {
+    background-color: green;
+}

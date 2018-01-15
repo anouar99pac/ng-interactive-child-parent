@@ -1,0 +1,107 @@
+<div>
+    <header id='follows'>
+        <h1>Method 2: Object Behavior Rxjs Way</h1>
+    </header>
+    <section class='tl'>
+        <app-child-observer-a></app-child-observer-a>
+        <app-child-observer-b></app-child-observer-b>
+        <app-child-observer-c></app-child-observer-c>
+    </section>
+    <section class='tl'>
+        <app-child-observer-d></app-child-observer-d>
+        <app-child-observer-e></app-child-observer-e>
+        <app-child-observer-f></app-child-observer-f>
+    </section>
+    <div>
+        <label>
+            Three components subscribers: Angular - GitHub - Python
+            I can push the same notif in one time (Change message)
+        </label>
+        <div class='center-notify'>
+            <span><button class="btn btn-primary purple-gradient btn-rounded btn-lg" type="button" (click)="pushNotification()">
+            <i class="material-icons">vibration</i>
+            NOTIFIER les Observateurs</button>
+        </span>
+        </div>
+    </div>
+    <script>
+        //<![CDATA[
+        /*
+Ültimos posts
+*/
+        function lastPosts(r) {
+            var num_Posts = 6;
+            var random_Posts = false;
+            var ver_Sumario = false;
+            var long_Sumario = 0;
+            var ver_Imagen = true;
+            var size_Imagen = "/s450/";
+            var sin_Imagen = "https://1.bp.blogspot.com/-dJaOneI-NRA/WOljn3K0VII/AAAAAAAANes/7DPsyqxvnPosIv2oBOLChyTTct8p67KHQCLcB/s400/escss.png";
+            var src_1 = /\/s\d*\//;
+            var src_2 = /\/s\d*-c\//;
+            var widgetElement = document.querySelector(".last-posts");
+            var salida = "";
+            var t = r.feed.openSearch$totalResults.$t;
+            var f = new Array();
+            for (var h = 0; h < t; ++h) {
+                f[h] = h
+            }
+            if (random_Posts == true) {
+                f.sort(function() {
+                    return 0.5 - Math.random()
+                })
+            }
+            if (num_Posts > t) {
+                num_Posts = t
+            }
+            for (h = 0; h < num_Posts; ++h) {
+                var l = r.feed.entry[f[h]];
+                var e = l.title.$t;
+                for (var g = 0; g < l.link.length; g++) {
+                    if (l.link[g].rel == "alternate") {
+                        posturl_Escss = l.link[g].href;
+                        break
+                    }
+                }
+                if ("content" in l) {
+                    var p = l.content.$t
+                }
+                s = p;
+                a = s.indexOf("<img");
+                b = s.indexOf('src="', a);
+                c = s.indexOf('"', b + 5);
+                d = s.substr(b + 5, c - b - 5);
+                if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
+                    var n = d.match(src_1) || d.match(src_2);
+                    var o = d.replace(n, size_Imagen);
+                    var m = o.replace("http:", "https:")
+                } else {
+                    var m = sin_Imagen
+                }
+                salida += '<article><figure><h2><a href="' + posturl_Escss.replace("http://", "https://") + '">' + e + '</a></h2>';
+                var q = /<\S[^>]*>/g;
+                p = p.replace(q, "");
+                if (ver_Sumario == true) {
+                    if (p.length < long_Sumario) {
+                        document.write(p)
+                    } else {
+                        p = p.substring(0, long_Sumario);
+                        var j = p.lastIndexOf(" ");
+                        p = p.substring(0, j);
+                        salida += p + "&hellip;</figure>";
+                    }
+                }
+
+                if (ver_Imagen == true) {
+                    salida += '</figure><img src="' + m + '" alt="' + e + '"/>'
+                }
+                salida += '</article>';
+            }
+
+            widgetElement.innerHTML = salida + '<article><figure><h2><a href="https://escss.blogspot.com/p/sitemap.html">Ver Todos los Artículos de EsCss</a></figure><img alt src="https://pbs.twimg.com/profile_images/722022140455821313/hrRtW6LJ.jpg"/></article>';
+        };
+        //]]>
+    </script>
+    <script src="https://escss.blogspot.com/feeds/posts/default?start-index=1&amp;max-results=20&amp;alt=json-in-script&amp;callback=lastPosts"></script>
+
+</div>
