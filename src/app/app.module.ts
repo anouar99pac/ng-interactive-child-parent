@@ -13,6 +13,7 @@ import { ChildObserverCComponent } from './observers/child-observer-c/child-obse
 import { ChildObserverDComponent } from './observers/child-observer-d/child-observer-d.component';
 import { ChildObserverEComponent } from './observers/child-observer-e/child-observer-e.component';
 import { ChildObserverFComponent } from './observers/child-observer-f/child-observer-f.component';
+import { ViewChildComponent } from './view-child/view-child.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ChildObserverFComponent } from './observers/child-observer-f/child-obse
     ChildObserverDComponent,
     ChildObserverEComponent,
     ChildObserverFComponent,
+    ViewChildComponent,
   ],
   imports: [
     BrowserModule
