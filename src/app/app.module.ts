@@ -14,6 +14,7 @@ import { ChildObserverDComponent } from './observers/child-observer-d/child-obse
 import { ChildObserverEComponent } from './observers/child-observer-e/child-observer-e.component';
 import { ChildObserverFComponent } from './observers/child-observer-f/child-observer-f.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { QuotesViewChildComponent } from './view-child/quotes-view-child/quotes-view-child.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ViewChildComponent } from './view-child/view-child.component';
     ChildObserverEComponent,
     ChildObserverFComponent,
     ViewChildComponent,
+    QuotesViewChildComponent,
   ],
   imports: [
     BrowserModule

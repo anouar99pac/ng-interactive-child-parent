@@ -1,5 +1,21 @@
-<div>
+<div class="container">
     <header id='follows'>
         <h1>Method 3: View Child Component to Component</h1>
     </header>
+    <div>
+        <label>
+            The list of quotations is provided from child, i would like to share a child random "Quote child-view-shared"
+            to the Parent component.
+        </label>
+    </div>
+    <div class="panel panel-info">
+        <br/><br/>
+        <label class="center">Parent Quote Choosed from Child</label>
+        <div>
+            <span>{{messageComponent}}</span>
+        </div>
+
+        <app-quotes-view-child></app-quotes-view-child>
+
+    </div>
 </div>
