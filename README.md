@@ -12,6 +12,10 @@ yarn start
 
 This project was built using Angular CLI version 1.1.0.
 
+Way :
+
+![screenshot way2_push](https://user-images.githubusercontent.com/12816334/35780615-6bc981cc-09de-11e8-8fa0-bf50e14aa975.png)
+
 # InteractiveChildParent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
