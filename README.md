@@ -12,6 +12,15 @@ yarn start
 
 This project was built using Angular CLI version 1.1.0.
 
+Demo Way 2: Behavior RXJS
+
+![screenshot way2_push](https://user-images.githubusercontent.com/12816334/35780615-6bc981cc-09de-11e8-8fa0-bf50e14aa975.png)
+
+Demo Way 3 : Using ViewChild
+
+![screenshot from_way3](https://user-images.githubusercontent.com/12816334/35780642-c038a440-09de-11e8-80ba-3a3b0771d59a.png)
+
+
 # InteractiveChildParent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
