@@ -1,4 +1,4 @@
-The ng2-interactive-child-parent project demonstrates us utility of communication and share Data beetween child component and parent component of Angular 4.
+The ng-interactive-child-parent project demonstrates us utility of communication and share Data beetween child component and parent component of Angular 4.
 
 @change 21/05/2018 : I upgraded my project to  Angular V 6, so i used RXJS 6, CLI 6
 Material 6.
@@ -7,7 +7,7 @@ DEMO:
 
 git clone https://github.com/anouar99pac/ng-interactive-child-parent.git
 
-cd ng2-interactive-child-parent
+cd ng-interactive-child-parent
 
 yarn install
 

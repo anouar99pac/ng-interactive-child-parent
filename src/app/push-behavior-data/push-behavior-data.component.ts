@@ -8,7 +8,7 @@ import { DataBehaviorService } from './data-behavior.service';
 })
 export class PushBehaviorDataComponent implements OnInit {
 
-  constructor(private pushNotif : DataBehaviorService) { }
+  constructor(private pushNotif: DataBehaviorService) { }
 
   ngOnInit() {
   }

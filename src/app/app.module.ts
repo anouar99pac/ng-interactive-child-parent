@@ -15,6 +15,8 @@ import { ChildObserverEComponent } from './observers/child-observer-e/child-obse
 import { ChildObserverFComponent } from './observers/child-observer-f/child-observer-f.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { QuotesViewChildComponent } from './view-child/quotes-view-child/quotes-view-child.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CrossComponentComponent } from './cross-component/cross-component.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +33,11 @@ import { QuotesViewChildComponent } from './view-child/quotes-view-child/quotes-
     ChildObserverFComponent,
     ViewChildComponent,
     QuotesViewChildComponent,
+    CrossComponentComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [DataBehaviorService],
   bootstrap: [AppComponent]
